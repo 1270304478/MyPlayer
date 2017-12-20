@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bwei.myplayer.MainActivity">
+
+<fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+    android:id="@+id/js"
+    android:layout_width="match_parent"
+    android:layout_height="300dp">
+
+</fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard>
+<ImageView
+android:layout_below="@+id/js"
+    android:id="@+id/image_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:src="@drawable/n"/>
+    <LinearLayout
+        android:layout_below="@+id/image_view"
+
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/but_01"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="加入购物车"/>
+        <Button
+            android:id="@+id/but_02"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="立即购买"/>
+
+    </LinearLayout>
+</RelativeLayout>
